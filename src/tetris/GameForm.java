@@ -114,7 +114,7 @@ public class GameForm extends JFrame {
                  initScore(frame);
                  initLevel(frame);
                  frame.setVisible(true);
-                 frame.setBounds(0, 0, 700, 500);
+                 frame.setBounds(0, 0, 700, 700);
                  frame.setLocationRelativeTo(null);
 
 

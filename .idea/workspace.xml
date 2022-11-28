@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57b17671-75cf-4bad-9320-250ce4267e36" name="Changes" comment="First commit">
+    <list default="true" id="57b17671-75cf-4bad-9320-250ce4267e36" name="Changes" comment="First stable working version">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tetris/GameArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tetris/GameArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tetris/GameThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tetris/GameThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tetris/TetrisBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tetris/TetrisBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tetris/GameForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tetris/GameForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tetrisblocks/IShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tetrisblocks/IShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tetrisblocks/LShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tetrisblocks/LShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tetrisblocks/SShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tetrisblocks/SShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tetrisblocks/TShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tetrisblocks/TShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tetrisblocks/ZShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tetrisblocks/ZShape.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +104,7 @@
       <workItem from="1669484988250" duration="12048000" />
       <workItem from="1669528407638" duration="2152000" />
       <workItem from="1669643058871" duration="8986000" />
+      <workItem from="1669668483349" duration="2195000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1669496100275</created>
@@ -108,7 +113,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669496100275</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First stable working version">
+      <created>1669668565766</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669668565766</updated>
+    </task>
+    <task id="LOCAL-00003" summary="First stable working version">
+      <created>1669668575577</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669668575577</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,7 +147,19 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="First stable working version" />
+    <option name="LAST_COMMIT_MESSAGE" value="First stable working version" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tetris/TetrisBlock.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Tetris$GameForm.ic" NAME="GameForm Coverage Results" MODIFIED="1669656818137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

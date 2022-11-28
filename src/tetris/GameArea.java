@@ -18,7 +18,7 @@ public class GameArea extends JPanel {
     private TetrisBlock[] blocks;
     public GameArea(int columns){
 
-        this.setBounds(98, 38, 300, 390);
+        this.setBounds(98, 38, 300, 600);
         this.setBackground(Color.white);
 
         Border blackLine = BorderFactory.createLineBorder(Color.black);
