@@ -49,6 +49,43 @@ public class GameArea extends JPanel {
 
     }
 
+    public void correctRotate(){
+        //for (int x = 0; x < block.getHeight(); x++){
+        //    for (int y = 0; y < block.getWidth(); y++){
+//
+        //        if (x+block.getX() <= 0 || x + block.getX() >= gridRows) continue;
+        //        if (y+block.getY() <= 0 || y + block.getY() >= gridColumns) continue;
+        //        if (block.getShape()[x][y] == 1 && background[y+block.getY()][x+block.getX()] != null) {
+        //            System.out.println("Collision!");
+        //        }
+        //    }
+        //}
+
+        int[][] shape = block.getShape();
+        int h = block.getHeight();
+        int w = block.getWidth();
+
+        int xPos = block.getX();
+        int yPos = block.getY();
+
+        boolean flag = true;
+        for (int r = 0; r < h; r++){
+            for (int c = 0; c < w; c++){
+
+                if (r+yPos <= 0 || r + yPos >= gridRows) continue;
+                if (c+xPos <= 0 || c + xPos >= gridColumns) continue;
+
+                if (shape[r][c] == 1 && background[r+yPos][c+xPos]!= null)
+                    flag = false;
+            }
+        }
+        if (!flag){
+            block.rotate();
+            block.rotate();
+            block.rotate();
+        }
+    }
+
     public boolean isBlockOutOfBounds() {
         if (block.getY() < 0){
             block = null;
@@ -92,6 +129,13 @@ public class GameArea extends JPanel {
     public void rotateBlock(){
         if (block == null) return;
         block.rotate();
+        correctRotate();
+
+        if (block.getLeftEdge()<0) block.setX(0);
+        if (block.getRightEdge()>gridColumns) block.setX(gridColumns - block.getWidth());
+        if (block.getBottomEdge()>=gridRows) block.setY(gridRows-block.getHeight());
+
+
         repaint();
     }
 
@@ -214,7 +258,6 @@ public class GameArea extends JPanel {
                     background[r+yPos][c+xPos] = color;
             }
         }
-
     }
 
     private void drawBlock(Graphics g){
@@ -248,6 +291,8 @@ public class GameArea extends JPanel {
                     int x = c * gridCelSize;
                     int y = r * gridCelSize;
                     drawGridSquare(g, color, x, y);
+
+
                 }
             }
         }

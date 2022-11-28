@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 
 public class GameThread extends Thread{
 
-    private GameArea ga;
+    private final GameArea ga;
     static private int pause = 1000;
     static private int speedUpPerLevel = 100;
     public GameThread(GameArea ga){
@@ -13,6 +13,7 @@ public class GameThread extends Thread{
     }
     @Override
     public void run(){
+
         while (true){
 
             ga.spawnBlock();
