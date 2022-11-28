@@ -7,7 +7,8 @@ public class GameThread extends Thread{
 
     private final GameArea ga;
     static private int pause = 1000;
-    static private int speedUpPerLevel = 100;
+    static final private double speedUpPerLevel = 1.5;  // game speed will be increased by 50%
+                                                        // with reaching a next level
     public GameThread(GameArea ga){
         this.ga = ga;
     }
@@ -37,6 +38,6 @@ public class GameThread extends Thread{
     }
 
     public static void decreasePause(){
-        pause -= speedUpPerLevel;
+        pause /= speedUpPerLevel;
     }
 }
